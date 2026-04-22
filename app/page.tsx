@@ -48,46 +48,13 @@ function IconStack() {
 
 function UDLogoMark() {
   return (
-    <svg
-      viewBox="0 0 220 220"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-full h-full max-w-[220px] max-h-[220px]"
-      aria-label="Universal Document logo mark"
-    >
-      {/* Document shape */}
-      <rect x="40" y="20" width="130" height="168" rx="8" stroke="#c8960a" strokeWidth="1.8" fill="rgba(200,150,10,0.07)" />
-      {/* Folded corner */}
-      <path d="M148 20 L170 42 L148 42 Z" fill="rgba(200,150,10,0.28)" />
-      <path d="M148 20 L170 42 L148 42" stroke="#c8960a" strokeWidth="1.2" fill="none" />
-      {/* UD initials */}
-      <text
-        x="105"
-        y="126"
-        textAnchor="middle"
-        fontFamily="Georgia, 'Times New Roman', serif"
-        fontSize="58"
-        fontWeight="700"
-        fill="white"
-        letterSpacing="4"
-      >
-        UD
-      </text>
-      {/* Divider rule */}
-      <line x1="60" y1="148" x2="150" y2="148" stroke="#c8960a" strokeWidth="1.2" opacity="0.55" />
-      {/* Trademark label */}
-      <text
-        x="105"
-        y="172"
-        textAnchor="middle"
-        fontFamily="Georgia, serif"
-        fontSize="11"
-        fill="rgba(200,150,10,0.65)"
-        letterSpacing="3"
-      >
-        UNIVERSAL DOCUMENT
-      </text>
-    </svg>
+    <img
+      src="/icons/ud-logo.svg"
+      alt="Universal Document logo mark"
+      width={220}
+      height={286}
+      className="w-full h-auto max-w-[220px]"
+    />
   )
 }
 
