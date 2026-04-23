@@ -1,4 +1,3 @@
-import Nav from './components/Nav'
 
 function IconDocument() {
   return (
@@ -91,8 +90,6 @@ function ServiceCard({ icon, title, body, links }: CardProps) {
 export default function Home() {
   return (
     <>
-      <Nav />
-
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="min-h-screen bg-navy flex flex-col items-center justify-center text-center px-6 py-24">
         <h1 className="font-playfair font-bold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl leading-tight mb-7">
