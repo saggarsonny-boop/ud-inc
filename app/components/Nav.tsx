@@ -28,7 +28,7 @@ export default function Nav() {
     >
       <nav className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         <span className="font-playfair font-bold text-white text-base md:text-lg leading-tight">
-          Universal Document Incorporated
+          Universal Document™ Incorporated
         </span>
 
         {/* Desktop links */}

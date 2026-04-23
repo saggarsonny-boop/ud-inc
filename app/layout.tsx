@@ -22,15 +22,15 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Universal Document Incorporated',
+  title: 'Universal Document™ Incorporated',
   description:
     'The standards body behind Universal Document™ — an open, free, and AI-native document format designed as the modern successor to PDF, DOCX, and legacy image formats.',
   metadataBase: new URL('https://universaldocument.hive.baby'),
   openGraph: {
-    title: 'Universal Document Incorporated',
+    title: 'Universal Document™ Incorporated',
     description: 'The Open Standard Transforming Global Document Workflows',
     url: 'https://universaldocument.hive.baby',
-    siteName: 'Universal Document Incorporated',
+    siteName: 'Universal Document™ Incorporated',
   },
 }
 

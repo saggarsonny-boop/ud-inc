@@ -50,7 +50,7 @@ function UDLogoMark() {
   return (
     <img
       src="/icons/ud-logo.svg"
-      alt="Universal Document logo mark"
+      alt="Universal Document™ logo mark"
       width={220}
       height={286}
       className="w-full h-auto max-w-[220px]"
@@ -96,7 +96,7 @@ export default function Home() {
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="min-h-screen bg-navy flex flex-col items-center justify-center text-center px-6 py-24">
         <h1 className="font-playfair font-bold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl leading-tight mb-7">
-          Universal Document Incorporated
+          Universal Document™ Incorporated
         </h1>
         <p className="font-sans font-light text-white/75 text-lg md:text-xl max-w-2xl leading-relaxed mb-12">
           The Open Standard Transforming Global Document Workflows
@@ -123,7 +123,7 @@ export default function Home() {
             </h2>
             <div className="font-sans font-light text-navy/70 text-base leading-relaxed space-y-5">
               <p>
-                Universal Document Incorporated is the standards body behind Universal
+                Universal Document™ Incorporated is the standards body behind Universal
                 Document™ — an open, free, and AI-native document format designed as the
                 modern successor to PDF, DOCX, and the image formats pressed into service
                 as document delivery mechanisms.
@@ -150,7 +150,7 @@ export default function Home() {
             <ServiceCard
               icon={<IconDocument />}
               title="Universal Document™ Reader & Converter"
-              body="Free, open-source tools for reading and converting Universal Document files. The UD Reader opens any .uds or .udr file. The UD Converter transforms PDF, DOCX, and other formats into Universal Document format."
+              body="Free, open-source tools for reading and converting Universal Document™ files. The UD Reader opens any .uds or .udr file. The UD Converter transforms PDF, DOCX, and other formats into Universal Document™ format."
               links={[
                 { label: 'Open the Reader →', href: 'https://universaldocument.vercel.app' },
                 { label: 'Convert a file →', href: 'https://converter.hive.baby' },
@@ -159,7 +159,7 @@ export default function Home() {
             <ServiceCard
               icon={<IconChip />}
               title="Infrastructure SDK"
-              body="A free SDK for device manufacturers to integrate Universal Document support natively into any device, operating system, or browser. Under 400KB. No licensing cost. No royalty. No attribution requirement."
+              body="A free SDK for device manufacturers to integrate Universal Document™ support natively into any device, operating system, or browser. Under 400KB. No licensing cost. No royalty. No attribution requirement."
               links={[
                 { label: 'iSDK enquiries →', href: 'mailto:press@universaldocument.solutions' },
               ]}
@@ -167,7 +167,7 @@ export default function Home() {
             <ServiceCard
               icon={<IconStack />}
               title="White Papers & Resources"
-              body="Authoritative guidance for governments, healthcare systems, enterprises, and courts. Implementation strategies, compliance frameworks, and sectoral adoption guidance for the Universal Document standard."
+              body="Authoritative guidance for governments, healthcare systems, enterprises, and courts. Implementation strategies, compliance frameworks, and sectoral adoption guidance for the Universal Document™ standard."
               links={[
                 { label: 'Read the white paper →', href: 'https://ud.hive.baby/whitepaper' },
               ]}
@@ -207,7 +207,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           {/* Identity block */}
           <div className="font-sans text-white/65 text-sm leading-loose space-y-0.5 mb-10">
-            <p className="text-white font-normal text-base">Universal Document Incorporated</p>
+            <p className="text-white font-normal text-base">Universal Document™ Incorporated</p>
             <p>
               <a href="mailto:press@universaldocument.solutions" className="hover:text-white/90 transition-colors">
                 press@universaldocument.solutions
@@ -238,7 +238,7 @@ export default function Home() {
                   ud.hive.baby/certified
                 </a>
               </p>
-              <p>© 2026 Universal Document Incorporated</p>
+              <p>© 2026 Universal Document™ Incorporated</p>
             </div>
 
             {/* Planet link */}
