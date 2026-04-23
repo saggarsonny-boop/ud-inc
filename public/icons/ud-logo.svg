@@ -1,50 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" role="img" aria-label="Universal Document™ — Möbius strip logo">
-  <rect width="200" height="260" fill="#1e2d3d" rx="12"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 270"
+     role="img" aria-label="Universal Document™ — Möbius strip logo mark">
+  <defs>
+    <!--
+      MÖBIUS STRIP — vertical orientation, wide ribbon, two contrasting faces.
+      Top lobe:    GOLD  (#c8960a) — gold face visible as ribbon arcs over the top.
+      Bottom lobe: DARK  (#1e2d3d) — slate face visible as ribbon loops under.
+      Single half-twist at centre crossing (100, 135).
 
-  <!--
-    MÖBIUS STRIP — half-twist crossing explicitly visible at centre.
+      Crossing corners:
+        TL=(72,120)  TR=(128,120)
+        BL=(72,150)  BR=(128,150)
 
-    Geometry (crossing centre at 100,95):
-      A=(85,80) top-left    B=(115,80) top-right
-      C=(85,110) bot-left   D=(115,110) bot-right
+      Route (clockwise):
+        TR →[top arc, gold]→ TL →[front diag, gold]→ BR
+           →[bottom arc, dark]→ BL →[back diag, dark, masked at crossing]→ TR
 
-    Back face:  B →[right arc]→ D →[back diagonal]→ A   (dim amber #9a6b04)
-    Front face: A →[left arc]→  C →[front diagonal]→ B  (bright gold #c8960a)
+      Mask colour #fafaf8 — designed for UD paper-white background.
+    -->
+    <linearGradient id="udG" x1="100" y1="44" x2="100" y2="148" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ffe080"/>
+      <stop offset="52%"  stop-color="#c8960a"/>
+      <stop offset="100%" stop-color="#7a4e00"/>
+    </linearGradient>
+    <linearGradient id="udD" x1="100" y1="120" x2="100" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#2d4459"/>
+      <stop offset="100%" stop-color="#08121c"/>
+    </linearGradient>
+  </defs>
 
-    At crossing: front diagonal C→B passes OVER back diagonal D→A.
-    Navy mask between steps 2 and 4 hides the back diagonal at the crossing,
-    creating a clear over/under depth illusion.
-  -->
+  <!-- 1 · Back diagonal BL→TR (dark face, goes UNDER) -->
+  <path d="M 72,150 L 128,120" stroke="#020609" stroke-width="34" stroke-linecap="round" fill="none"/>
+  <path d="M 72,150 L 128,120" stroke="url(#udD)"  stroke-width="24" stroke-linecap="round" fill="none"/>
 
-  <!-- 1. Back diagonal D→A — dim amber, goes UNDER the front crossing -->
-  <path d="M 115,110 L 85,80"
-    stroke="#9a6b04" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- 2 · Mask — paper-white erases back diagonal at crossing before bottom arc is drawn -->
+  <!--     Centre (100,135), along front-diag direction (0.882,0.472), half-length 18 px      -->
+  <path d="M 84,127 L 116,143" stroke="#fafaf8" stroke-width="40" stroke-linecap="butt" fill="none"/>
 
-  <!-- 2. Back right loop B→D — dim amber -->
-  <path d="M 115,80 C 192,48 192,148 115,110"
-    stroke="#9a6b04" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- 3 · Bottom arc BR→BL (dark face, curves downward) -->
+  <path d="M 128,150 C 166,228 34,228 72,150" stroke="#020609" stroke-width="34" stroke-linecap="round" fill="none"/>
+  <path d="M 128,150 C 166,228 34,228 72,150" stroke="url(#udD)"  stroke-width="24" stroke-linecap="round" fill="none"/>
 
-  <!-- 3. Navy mask — erases back diagonal at the crossing point -->
-  <line x1="89" y1="107" x2="111" y2="83"
-    stroke="#1e2d3d" stroke-width="28" stroke-linecap="butt"/>
+  <!-- 4 · Top arc TR→TL (gold face, curves upward) -->
+  <path d="M 128,120 C 166,44 34,44 72,120" stroke="#2a1400" stroke-width="34" stroke-linecap="round" fill="none"/>
+  <path d="M 128,120 C 166,44 34,44 72,120" stroke="url(#udG)"  stroke-width="24" stroke-linecap="round" fill="none"/>
+  <path d="M 128,120 C 166,44 34,44 72,120" stroke="rgba(255,245,175,0.38)" stroke-width="7" stroke-linecap="round" fill="none"/>
 
-  <!-- 4. Front left loop A→C — bright gold -->
-  <path d="M 85,80 C 8,48 8,148 85,110"
-    stroke="#c8960a" stroke-width="20" stroke-linecap="round" fill="none"/>
-
-  <!-- 5. Front diagonal C→B — bright gold, crosses OVER the back -->
-  <path d="M 85,110 L 115,80"
-    stroke="#c8960a" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- 5 · Front diagonal TL→BR (gold, crosses OVER back diagonal) -->
+  <path d="M 72,120 L 128,150" stroke="#2a1400" stroke-width="34" stroke-linecap="round" fill="none"/>
+  <path d="M 72,120 L 128,150" stroke="url(#udG)"  stroke-width="24" stroke-linecap="round" fill="none"/>
+  <path d="M 72,120 L 128,150" stroke="rgba(255,245,175,0.38)" stroke-width="7" stroke-linecap="round" fill="none"/>
 
   <!-- WORDMARK -->
-  <text x="100" y="206"
+  <text x="100" y="244"
     text-anchor="middle"
-    font-family="'Playfair Display',Georgia,'Times New Roman',serif"
-    font-size="15" font-weight="700"
-    fill="#c8960a" letter-spacing="3">UNIVERSAL DOCUMENT<tspan font-size="9" dy="-5" letter-spacing="0" dx="1">&#x2122;</tspan></text>
-
-  <text x="100" y="225"
-    text-anchor="middle"
-    font-family="'Playfair Display',Georgia,serif"
-    font-size="9" fill="#c8960a" letter-spacing="4" opacity="0.6">OPEN FORMAT</text>
+    font-family="'DM Mono','Courier New',monospace"
+    font-size="11.5"
+    fill="#1e2d3d"
+    letter-spacing="3"
+  >UNIVERSAL DOCUMENT<tspan
+      font-size="7.5"
+      baseline-shift="super"
+      letter-spacing="0"
+      dx="1">&#x2122;</tspan></text>
 </svg>
