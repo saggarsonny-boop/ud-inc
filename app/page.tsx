@@ -114,7 +114,7 @@ export default function Home() {
       {/* ── About ────────────────────────────────────────────── */}
       <section id="about" className="py-24 px-6 bg-cream">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-          <div className="bg-navy rounded-2xl aspect-square flex items-center justify-center p-16 order-1 md:order-none">
+          <div className="bg-cream border border-navy/10 rounded-2xl aspect-square flex items-center justify-center p-16 order-1 md:order-none">
             <UDLogoMark />
           </div>
           <div>
