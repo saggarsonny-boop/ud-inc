@@ -19,3 +19,9 @@ html {
   font-size: 16px;
   line-height: 1.6;
 }
+
+/* Semantic accessibility classes */
+.ud-card-desc    { font-size: 15px; color: #374151;   line-height: 1.7; }
+.ud-compare-text { font-size: 15px; color: #1e2d3d;   line-height: 1.7; }
+.ud-form-label   { font-size: 14px; color: #1e2d3d;   font-weight: 500; display: block; }
+.ud-footer-text  { font-size: 13px; color: #4b5563; }
