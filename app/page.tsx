@@ -48,11 +48,10 @@ function IconStack() {
 function UDLogoMark() {
   return (
     <img
-      src="/icons/ud-logo.svg"
-      alt="Universal Document™ logo mark"
-      width={220}
-      height={286}
-      className="w-full h-auto max-w-[220px]"
+      src="/icons/ud-mark-uds.png"
+      alt="Universal Document"
+      width={120}
+      height={120}
     />
   )
 }
