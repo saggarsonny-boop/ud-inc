@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="bg-cream text-navy antialiased flex flex-col min-h-screen">
         <UDNav />
-        <div style={{ background: '#c8960a', color: '#1e2d3d', fontFamily: 'var(--font-dm-mono)', fontSize: 12, textAlign: 'center', padding: '0 24px', height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', letterSpacing: '0.05em', textTransform: 'uppercase', flexShrink: 0 }}>
+        <div style={{ background: '#c8960a', color: '#1e2d3d', fontFamily: 'var(--font-dm-mono)', fontSize: 13, textAlign: 'center', padding: '0 24px', height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', letterSpacing: '0.05em', textTransform: 'uppercase', flexShrink: 0 }}>
           ✦ All Pro features free during beta — no account required · no credit card · full access while we build ✦
         </div>
         {children}

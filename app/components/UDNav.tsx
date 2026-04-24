@@ -32,7 +32,7 @@ export default function UDNav() {
       <nav style={{ display: 'flex', gap: 18, alignItems: 'center' }}>
         {TOOLS.map(t => (
           <a key={t.href} href={t.href} style={{
-            fontFamily: 'var(--font-dm-sans), system-ui, sans-serif', fontSize: 12,
+            fontFamily: 'var(--font-dm-sans), system-ui, sans-serif', fontSize: 13,
             color: 'rgba(255,255,255,0.7)',
             fontWeight: 500, textDecoration: 'none', transition: 'color 0.15s',
           }}

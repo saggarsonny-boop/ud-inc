@@ -18,19 +18,19 @@ export default function UDFooter() {
           {NAV_LINKS.map(t => (
             <a key={t.href} href={t.href}
               className="font-mono text-navy/50 hover:text-navy transition-colors"
-              style={{ fontSize: 11, fontWeight: 500, textDecoration: 'none' }}
+              style={{ fontSize: 13, fontWeight: 500, textDecoration: 'none' }}
             >{t.label}</a>
           ))}
         </div>
-        <p className="font-mono text-navy/50" style={{ fontSize: 11, marginBottom: 10 }}>
+        <p className="font-mono text-navy/50" style={{ fontSize: 13, marginBottom: 10 }}>
           <a href="mailto:hive@hive.baby" className="hover:text-navy transition-colors" style={{ textDecoration: 'none', color: 'inherit' }}>hive@hive.baby</a>
           {' · '}
           <a href="https://universaldocument.hive.baby" className="hover:text-navy transition-colors" style={{ textDecoration: 'none', color: 'inherit' }}>universaldocument.hive.baby</a>
         </p>
-        <p className="font-mono text-navy/30" style={{ fontSize: 10, marginBottom: 4 }}>
+        <p className="font-mono text-navy/30" style={{ fontSize: 13, marginBottom: 4 }}>
           Universal Document™ is a pending trademark (USPTO Serial No. 99774346)
         </p>
-        <p className="font-mono text-navy/30" style={{ fontSize: 10, marginBottom: 16 }}>
+        <p className="font-mono text-navy/30" style={{ fontSize: 13, marginBottom: 16 }}>
           © 2026 Universal Document Incorporated
         </p>
         <a href="https://hive.baby" style={{ fontSize: 18, textDecoration: 'none', opacity: 0.4, display: 'inline-block' }}
