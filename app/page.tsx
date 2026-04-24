@@ -86,6 +86,8 @@ function ServiceCard({ icon, title, body, links }: CardProps) {
   )
 }
 
+import TooltipTour from './components/TooltipTour'
+
 export default function Home() {
   return (
     <>
@@ -270,6 +272,12 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <TooltipTour engineId="ud-inc" tips={[
+        { label: 'Universal Document™', text: 'The open format for structured, tamper-evident, AI-native documents. .uds files carry provenance, expiry, clarity layers, and cryptographic proof inside the file itself.' },
+        { label: 'Free tools', text: 'Six tools — Converter, Reader, Creator, Validator, Utilities, Signer. All free. All run in your browser. No account required.' },
+        { label: 'White Paper', text: 'The full technical specification: UDS schema, provenance model, MLLR multilingual protocol, clarity layer architecture, and signing format.' },
+        { label: 'Open standard', text: 'The Universal Document™ specification is open. Build readers, validators, and converters with the iSDK — Apache 2.0 licence.' },
+      ]} />
     </>
   )
 }
