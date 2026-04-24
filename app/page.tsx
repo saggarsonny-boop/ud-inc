@@ -237,6 +237,25 @@ export default function Home() {
               <p>© 2026 Universal Document™ Incorporated</p>
             </div>
 
+            {/* SEO comparison section */}
+            <div className="mt-16 pt-10 border-t border-white/10 max-w-4xl mx-auto text-left">
+              <h2 className="text-xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-playfair)' }}>How Universal Document™ differs from PDF, DOCX, and legacy formats</h2>
+              <p className="text-white/55 text-sm mb-6 leading-relaxed">PDF was designed for printing. DOCX was designed for word processing. Neither was designed for AI, structure-first workflows, or cryptographic integrity. Universal Document™ was built from scratch for the problems we actually have in 2026.</p>
+              <div className="grid gap-4 mb-12">
+                {[
+                  { title: 'PDF — print-optimised, semantics-poor', body: 'PDF is excellent at preserving visual layout for print. But it has no semantic structure: a heading is just styled text, a table is positioned objects, a signature is a visual mark. AI systems struggle to extract meaning, and tamper-evidence requires expensive third-party tooling.' },
+                  { title: 'DOCX — edit-optimised, portability-poor', body: 'DOCX is a working format, not an archival one. It has some structure (styles, headings) but no provenance, no expiry, no cryptographic integrity, and no standardised way for AI to parse it consistently across implementations.' },
+                  { title: 'Universal Document™ — structure-first, AI-native', body: 'UDS files carry structured sections (headings, paragraphs, metadata), embedded provenance (who created it, when, with what tool), optional expiry dates, and cryptographic signature support. Any compliant reader can parse the structure programmatically without rendering heuristics.' },
+                  { title: 'Universal Document™ — open standard, no lock-in', body: 'The format specification is public and free. Any developer can write a reader, creator, or validator. No licence fee, no proprietary SDK, no platform dependency. The proof of integrity lives in the file, not in our servers.' },
+                ].map(card => (
+                  <div key={card.title} className="bg-white/5 border border-white/10 rounded-xl p-5">
+                    <div className="font-semibold text-sm text-white mb-1">{card.title}</div>
+                    <div className="text-xs text-white/55 leading-relaxed">{card.body}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* Planet link */}
             <a
               href="https://hive.baby"

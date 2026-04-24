@@ -24,16 +24,17 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Universal Document™ Incorporated',
-  description:
-    'The standards body behind Universal Document™ — an open, free, and AI-native document format designed as the modern successor to PDF, DOCX, and legacy image formats.',
+  title: 'Universal Document™ Incorporated — The Open AI-Native Document Standard. PDF Successor.',
+  description: 'Universal Document™ is an open, free, AI-native document format designed as the modern successor to PDF and DOCX. Structured, tamper-evident, and built for the age of AI. Free forever.',
+  keywords: 'universal document format, PDF alternative, DOCX replacement, AI document format, open document standard, structured document format, tamper-evident document, document format successor, UDS file format, open document specification',
   metadataBase: new URL('https://universaldocument.hive.baby'),
   icons: { icon: '/favicon.svg' },
   openGraph: {
-    title: 'Universal Document™ Incorporated',
-    description: 'The Open Standard Transforming Global Document Workflows',
+    title: 'Universal Document™ Incorporated — The Open AI-Native Document Standard. PDF Successor.',
+    description: 'Universal Document™ is an open, structured, AI-native document format. Free forever. Successor to PDF and DOCX.',
     url: 'https://universaldocument.hive.baby',
     siteName: 'Universal Document™ Incorporated',
+    type: 'website',
   },
 }
 
