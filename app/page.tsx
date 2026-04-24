@@ -148,7 +148,7 @@ export default function Home() {
               title="Universal Document™ Reader & Converter"
               body="Free, open-source tools for reading and converting Universal Document™ files. The UD Reader opens any .uds or .udr file. The UD Converter transforms PDF, DOCX, and other formats into Universal Document™ format."
               links={[
-                { label: 'Open the Reader →', href: 'https://universaldocument.vercel.app' },
+                { label: 'Open the Reader →', href: 'https://reader.hive.baby' },
                 { label: 'Convert a file →', href: 'https://converter.hive.baby' },
               ]}
             />
