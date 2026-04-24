@@ -12,6 +12,8 @@ const config: Config = {
       colors: {
         navy: '#1e2d3d',
         gold: '#c8960a',
+        'gold-text': '#a07008',   /* gold for text on light backgrounds */
+        muted: '#4b5563',         /* WCAG AA on cream/smoke */
         cream: '#fafaf8',
         smoke: '#f2f1ee',
       },

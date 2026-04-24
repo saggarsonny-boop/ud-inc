@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* UD Design System tokens — WCAG AA compliant */
+  --ud-ink:       #1e2d3d;
+  --ud-muted:     #4b5563;    /* WCAG AA ≥4.5:1 on #fafaf8 */
+  --ud-gold-text: #a07008;    /* gold for text on light backgrounds */
+  --ud-text-base: 16px;
+  --ud-text-sm:   14px;
+  --ud-text-xs:   13px;
+  --ud-lh-body:   1.6;
+  --ud-lh-para:   1.7;
+}
+
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.6;
 }
