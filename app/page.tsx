@@ -147,27 +147,33 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <ServiceCard
               icon={<IconDocument />}
-              title="Universal Document™ Reader & Converter"
-              body="Free, open-source tools for reading and converting Universal Document™ files. The UD Reader opens any .uds or .udr file. The UD Converter transforms PDF, DOCX, and other formats into Universal Document™ format."
+              title="UD Tools — Read, Convert, Create, Sign"
+              body="Free tools for every stage of the Universal Document™ lifecycle. Read .uds and .udr files, convert from any format, create from scratch, validate integrity, sign with full audit trail."
               links={[
-                { label: 'Open the Reader →', href: 'https://reader.hive.baby' },
-                { label: 'Convert a file →', href: 'https://converter.hive.baby' },
+                { label: 'UD Reader →',     href: 'https://reader.hive.baby' },
+                { label: 'UD Converter →',  href: 'https://converter.hive.baby' },
+                { label: 'UD Creator →',    href: 'https://creator.hive.baby' },
+                { label: 'UD Validator →',  href: 'https://validator.hive.baby' },
+                { label: 'UD Signer →',     href: 'https://signer.hive.baby' },
+                { label: 'UD Utilities →',  href: 'https://utilities.hive.baby' },
               ]}
             />
             <ServiceCard
               icon={<IconChip />}
-              title="Infrastructure SDK"
-              body="A free SDK for device manufacturers to integrate Universal Document™ support natively into any device, operating system, or browser. Under 400KB. No licensing cost. No royalty. No attribution requirement."
+              title="Developer SDKs"
+              body="iSDK: embed Universal Document™ read/render in any device or app. Free forever. Under 400KB. No attribution. cSDK: API access to creation, conversion, signing, and validation for builders."
               links={[
-                { label: 'iSDK enquiries →', href: 'mailto:press@universaldocument.solutions' },
+                { label: 'iSDK — free forever →',   href: 'https://ud.hive.baby/isdk' },
+                { label: 'cSDK — for builders →',   href: 'https://ud.hive.baby/csdk' },
               ]}
             />
             <ServiceCard
               icon={<IconStack />}
-              title="White Papers & Resources"
-              body="Authoritative guidance for governments, healthcare systems, enterprises, and courts. Implementation strategies, compliance frameworks, and sectoral adoption guidance for the Universal Document™ standard."
+              title="Specification & Resources"
+              body="Universal Document™ Standard 1.0 — the open format specification. CC BY 4.0. Free to implement. Working paper available on SSRN."
               links={[
-                { label: 'Read the white paper →', href: 'https://ud.hive.baby/whitepaper' },
+                { label: 'Read the white paper →',  href: 'https://ud.hive.baby/whitepaper' },
+                { label: 'UD Hub →',                href: 'https://ud.hive.baby' },
               ]}
             />
           </div>
