@@ -50,8 +50,8 @@ function UDLogoMark() {
     <img
       src="/icons/ud-mark-uds.png"
       alt="Universal Document"
-      width={120}
-      height={120}
+      width={300}
+      height={300}
     />
   )
 }
